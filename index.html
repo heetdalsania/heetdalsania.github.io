@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heet Dalsania</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Fixed beach background -->
+  <div class="bg-sky" aria-hidden="true"></div>
+  <div class="bg-horizon" aria-hidden="true"></div>
+  <div class="bg-ocean" aria-hidden="true"></div>
+  <div class="bg-sand" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#" class="nav-brand">HD</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">
+        <span id="themeIcon">☀️</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="hero" id="top">
+      <div class="hero-inner wrap">
+        <p class="hero-location">📍 Tempe, Arizona</p>
+        <h1 class="hero-name" id="heroName">Heet Dalsania</h1>
+        <p class="hero-role">CS Student &amp; AI Researcher @ Arizona State University</p>
+        <p class="hero-bio">
+          Building AI systems across computer vision, biomedical imaging, and machine learning.
+          Barrett Honors Scholar. Passionate about leveraging deep learning to drive real-world impact.
+        </p>
+        <div class="hero-links">
+          <a href="mailto:heet.dalsania@gmail.com" class="chip">✉ Email</a>
+          <a href="https://github.com/heetdalsania" class="chip" target="_blank" rel="noopener">⌥ GitHub</a>
+          <a href="https://www.linkedin.com/in/heet-dalsania-b37999283/" class="chip" target="_blank" rel="noopener">in LinkedIn</a>
+          <a href="Resume 3.2 copy.pdf" class="chip chip-accent" target="_blank" rel="noopener">↓ Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <h2 class="section-label">About</h2>
+        <div class="prose-block">
+          <p>
+            I'm a Computer Science student at Arizona State University's Barrett Honors College
+            with a deep focus on AI and machine learning. My work spans biomedical imaging, computer vision,
+            and generative AI — currently conducting research at two ASU labs under faculty mentors.
+          </p>
+          <p>
+            I hold a GCP Professional ML Engineer certification, an AWS AI Practitioner certification, and
+            certifications from Stanford, IBM, and Oracle. Outside of research and coursework, I've built
+            ML models, full-stack web apps, and drone-based AI systems.
+          </p>
+          <p>
+            When I'm not in a terminal, I'm playing basketball, competing in debate, or playing chess.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EDUCATION ── -->
+    <section class="section" id="education">
+      <div class="wrap">
+        <h2 class="section-label">Education</h2>
+        <div class="stack">
+
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Arizona State University</h3>
+                <p class="card-sub">Barrett Honors College · B.S. Computer Science</p>
+              </div>
+              <span class="card-date">2025 – Present</span>
+            </div>
+            <ul class="detail-list">
+              <li>Barrett Undergraduate Research Fellow</li>
+              <li>Relevant Coursework: MAT267 Calculus III, MAT243 Discrete Mathematics, CSE205 Object-Oriented Programming</li>
+              <li>Extracurriculars: Claude Builder Club, Hacker Devils Club, AI Scholars Society, Debate, Varsity Basketball, Chess Club</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Basis Peoria</h3>
+                <p class="card-sub">High School Diploma</p>
+              </div>
+              <span class="card-date">2021 – 2025</span>
+            </div>
+            <ul class="detail-list">
+              <li>GPA: 4.65 (Weighted) &nbsp;·&nbsp; 3.92 (Unweighted)</li>
+              <li>AP Computer Science Principles, AP Calculus I &amp; II, AP Physics I &amp; II, AP Biology, AP Latin, AP Chemistry, AP Environmental Science, AP US Government &amp; Politics</li>
+              <li>Honors: ASU Dean's List, AP Scholar Award, NHS, JCL, NLE — 2 Gold Medals, 1 Silver Medal</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── RESEARCH ── -->
+    <section class="section" id="research">
+      <div class="wrap">
+        <h2 class="section-label">Research</h2>
+        <div class="stack">
+
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">People and Robots Laboratory (PeRL)</h3>
+                <p class="card-sub">Arizona State University · Mentor: Prof. Pooyan Fazli</p>
+              </div>
+              <span class="card-badge">Current</span>
+            </div>
+            <p class="card-desc">
+              Conducting research in computer vision, deep learning, and machine learning.
+              Current focus: <strong>AI-Generated Video Detection</strong> — developing methods to detect
+              synthetically generated video content using deep learning approaches.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">AI Detection</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Zero-shot &amp; Few-Shot Learning for Rare Disease Diagnosis</h3>
+                <p class="card-sub">ASU SCENE · Mentor: Prof. Jianming Liang, PhD</p>
+              </div>
+              <span class="card-badge card-badge--pub">Published</span>
+            </div>
+            <p class="card-desc">
+              Research in biomedical imaging, deep learning, and computer-aided diagnosis,
+              focusing on learning with limited labeled data for rare disease classification.
+            </p>
+            <p class="pub-line">
+              📄 <a href="https://arxiv.org/abs/2507.07254" class="text-link" target="_blank" rel="noopener">Label-Efficient Chest X-ray Diagnosis via Partial CLIP Adaptation</a>
+            </p>
+            <div class="tag-row">
+              <span class="tag">Biomedical Imaging</span>
+              <span class="tag">Few-Shot Learning</span>
+              <span class="tag">CLIP</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Barrett Undergraduate Research Fellowship</h3>
+                <p class="card-sub">Arizona State University · Mentor: Prof. Jianming Liang, PhD</p>
+              </div>
+            </div>
+            <p class="card-desc">
+              Focusing on achieving state-of-the-art (SOTA) performance in biomedical imaging
+              and computer-aided diagnosis through advanced deep learning techniques.
+            </p>
+            <div class="tag-row">
+              <span class="tag">SOTA Research</span>
+              <span class="tag">Medical AI</span>
+              <span class="tag">Deep Learning</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <h2 class="section-label">Projects</h2>
+        <div class="projects-grid">
+
+          <div class="card project-card">
+            <div class="project-tag">Machine Learning</div>
+            <h3 class="card-title">NBA MVP Predictor</h3>
+            <p class="card-desc">
+              ML model trained on NBA MVP data and player stats from 1995–2024 to analyze
+              the relevancy of each stat in contributing to MVP shares. Achieves <strong>90% accuracy</strong>.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">Pandas</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="text-link">GitHub ↗</a>
+            </div>
+          </div>
+
+          <div class="card project-card">
+            <div class="project-tag">Full Stack</div>
+            <h3 class="card-title">Stock Market News Aggregator</h3>
+            <p class="card-desc">
+              Web app that aggregates and sorts relevant financial news based on day-to-day
+              stock market operations, providing a clean signal-to-noise ratio for traders.
+            </p>
+            <div class="tag-row">
+              <span class="tag">JavaScript</span><span class="tag">APIs</span><span class="tag">NLP</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="text-link">GitHub ↗</a>
+            </div>
+          </div>
+
+          <div class="card project-card">
+            <div class="project-tag">Computer Vision</div>
+            <h3 class="card-title">Saguaro Cactus AI Detection</h3>
+            <p class="card-desc">
+              EPICS ASU project developing a drone-based method to track and log Saguaro
+              cacti in Tonto National Forest using instance segmentation models.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Mask-RCNN</span><span class="tag">YOLO11-seg</span><span class="tag">Drones</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="text-link">GitHub ↗</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <h2 class="section-label">Skills &amp; Certifications</h2>
+        <div class="skills-wrap">
+
+          <div class="skills-col">
+            <h3 class="skills-heading">Technical Skills</h3>
+            <div class="tag-row tag-row--wrap">
+              <span class="tag">Python</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Generative AI</span>
+              <span class="tag">AWS AI &amp; ML</span>
+              <span class="tag">Google Cloud AI</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Calculus</span>
+            </div>
+
+            <h3 class="skills-heading" style="margin-top:1.5rem">Languages</h3>
+            <div class="tag-row tag-row--wrap">
+              <span class="tag">English</span>
+              <span class="tag">Gujarati</span>
+              <span class="tag">Latin</span>
+            </div>
+          </div>
+
+          <div class="skills-col">
+            <h3 class="skills-heading">Certifications</h3>
+            <ul class="cert-list">
+              <li>
+                <span class="cert-issuer">Google Cloud</span>
+                Professional Machine Learning Engineer
+              </li>
+              <li>
+                <span class="cert-issuer">AWS</span>
+                Certified AI Practitioner
+              </li>
+              <li>
+                <span class="cert-issuer">Oracle</span>
+                Cloud Infrastructure 2024 Generative AI Professional
+              </li>
+              <li>
+                <span class="cert-issuer">Stanford / DeepLearning.AI</span>
+                Supervised Machine Learning: Regression &amp; Classification
+              </li>
+              <li>
+                <span class="cert-issuer">IBM</span>
+                Applied AI Professional Certificate (6 courses)
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <h2 class="section-label">Contact</h2>
+        <p class="contact-intro">
+          I'm always open to research collaborations, internship opportunities, or just a good conversation about AI. Reach out.
+        </p>
+        <div class="contact-row">
+          <a href="mailto:heet.dalsania@gmail.com" class="contact-link">
+            <span class="contact-icon">✉</span> heet.dalsania@gmail.com
+          </a>
+          <a href="https://github.com/heetdalsania" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-icon">⌥</span> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/heet-dalsania-b37999283/" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-icon">in</span> LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Heet Dalsania · Built for GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
