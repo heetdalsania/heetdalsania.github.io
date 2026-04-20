@@ -3,7 +3,7 @@ const html = document.documentElement;
 const themeBtn = document.getElementById('themeToggle');
 const themeIcon = document.getElementById('themeIcon');
 
-setTheme(localStorage.getItem('theme') || 'light');
+setTheme(localStorage.getItem('theme') || 'dark');
 
 themeBtn.addEventListener('click', () => {
   const next = html.dataset.theme === 'dark' ? 'light' : 'dark';
