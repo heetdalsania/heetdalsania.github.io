@@ -359,6 +359,215 @@ body {
 [data-theme="dark"] .beach-ball { display: none; }
 
 /* =============================================
+   BEACH DECORATIONS
+   ============================================= */
+.beach-decor-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ── Seagulls (day sky) ── */
+.b-seagull { position: absolute; }
+.b-seagull::before,
+.b-seagull::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 18px; height: 8px;
+  border-top: 2px solid rgba(40,50,70,0.35);
+  border-radius: 50% 50% 0 0;
+}
+.b-seagull::before { left: 0; }
+.b-seagull::after  { left: 16px; }
+.b-sg1 { top: 20%;  left: 28%; }
+.b-sg2 { top: 13%;  left: 55%; transform: scale(0.72); opacity: 0.72; }
+.b-sg3 { top: 27%;  left: 67%; transform: scale(0.88); opacity: 0.82; }
+[data-theme="dark"] .b-seagull { display: none; }
+
+/* ── Beach umbrella (day) ── */
+.b-umbrella {
+  position: absolute;
+  left: calc(21% - 2px);
+  bottom: 18.5vh;
+  width: 4px; height: 9vh;
+  background: linear-gradient(to bottom, #c8a030, #7a5010);
+  border-radius: 2px;
+}
+.b-umbrella::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 78px; height: 39px;
+  border-radius: 50% 50% 0 0;
+  background: conic-gradient(
+    from -90deg at 50% 100%,
+    #ff5252 0deg 30deg,  #fff    30deg 60deg,
+    #ff9800 60deg 90deg, #fff    90deg 120deg,
+    #26c6da 120deg 150deg, #fff  150deg 180deg,
+    transparent 180deg 360deg
+  );
+  filter: drop-shadow(0 3px 7px rgba(0,0,0,0.22));
+}
+.b-umbrella::after {
+  content: '';
+  position: absolute;
+  bottom: calc(100% - 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7px; height: 7px;
+  background: #c8a030;
+  border-radius: 50%;
+}
+[data-theme="dark"] .b-umbrella { display: none; }
+
+/* ── Beach towel (day) ── */
+.b-towel {
+  position: absolute;
+  bottom: 20.4vh;
+  left: 14%;
+  width: 68px; height: 22px;
+  border-radius: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    #ff5a8a 0px 9px,  #fff    9px 13px,
+    #4ecdc4 13px 22px, #fff   22px 26px,
+    #ffce00 26px 35px, #fff   35px 39px
+  );
+  box-shadow: 1px 2px 8px rgba(0,0,0,0.15);
+  transform: rotate(-4deg);
+}
+[data-theme="dark"] .b-towel { display: none; }
+
+/* ── Sandcastle (day) ── */
+.b-castle {
+  position: absolute;
+  right: 17%;
+  bottom: 20vh;
+  width: 48px; height: 26px;
+  background: #b88c18;
+  border-radius: 2px 2px 0 0;
+}
+.b-castle::before {
+  content: '';
+  position: absolute;
+  left: -12px; bottom: 0;
+  width: 14px; height: 38px;
+  background: #b88c18;
+  border-radius: 2px 2px 0 0;
+  box-shadow: inset -2px 0 5px rgba(0,0,0,0.12);
+}
+.b-castle::after {
+  content: '';
+  position: absolute;
+  right: -12px; bottom: 0;
+  width: 14px; height: 38px;
+  background: #b88c18;
+  border-radius: 2px 2px 0 0;
+  box-shadow: inset 2px 0 5px rgba(0,0,0,0.12);
+}
+[data-theme="dark"] .b-castle { display: none; }
+
+/* ── Bonfire (night) ── */
+.b-bonfire {
+  position: absolute;
+  bottom: 20.4vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px; height: 38px;
+}
+.b-bonfire::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 32px; height: 9px;
+  background: #1e0e04;
+  border-radius: 5px;
+  box-shadow: 0 0 14px rgba(255,100,0,0.55), 0 0 32px rgba(255,60,0,0.25);
+}
+.b-bonfire::after {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  left: calc(50% - 11px);
+  width: 22px; height: 32px;
+  background: radial-gradient(
+    ellipse at 50% 100%,
+    #ffee44 0%, #ff9500 30%, #ff3300 62%, transparent 100%
+  );
+  border-radius: 50% 50% 25% 25%;
+  filter: blur(2px);
+  transform-origin: bottom center;
+  animation: fire-flicker 0.42s ease-in-out infinite alternate;
+}
+[data-theme="light"] .b-bonfire { display: none; }
+
+/* ── Tiki torches (night) ── */
+.b-torch {
+  position: absolute;
+  bottom: 20vh;
+  width: 4px; height: 8vh;
+  background: linear-gradient(to bottom, #5a3010, #200e02);
+  border-radius: 2px;
+}
+.b-torch1 { left:  30%; }
+.b-torch2 { right: 24%; }
+.b-torch::before {
+  content: '';
+  position: absolute;
+  top: -10px; left: 50%;
+  transform: translateX(-50%);
+  width: 14px; height: 10px;
+  background: #3a2008;
+  clip-path: polygon(0% 0, 100% 0, 85% 100%, 15% 100%);
+  filter: drop-shadow(0 0 5px rgba(255,120,0,0.6));
+}
+.b-torch::after {
+  content: '';
+  position: absolute;
+  top: -28px;
+  left: calc(50% - 7px);
+  width: 14px; height: 20px;
+  background: radial-gradient(
+    ellipse at 50% 100%,
+    #ffee44 0%, #ff8800 38%, #ff3300 70%, transparent 100%
+  );
+  border-radius: 50% 50% 20% 20%;
+  filter: blur(1.5px);
+  transform-origin: bottom center;
+  animation: fire-flicker 0.58s ease-in-out infinite alternate;
+}
+[data-theme="light"] .b-torch { display: none; }
+
+/* ── Fireflies (night) ── */
+.b-firefly {
+  position: absolute;
+  width: 3px; height: 3px;
+  border-radius: 50%;
+  background: #b8ff66;
+  box-shadow: 0 0 4px #b8ff66, 0 0 10px rgba(184,255,100,0.5);
+}
+.b-ff1 { top: 71%; left: 18%;  animation: ff-drift 3.2s ease-in-out infinite; }
+.b-ff2 { top: 63%; left: 44%;  animation: ff-drift 4.0s ease-in-out infinite 1.1s; }
+.b-ff3 { top: 68%; left: 78%;  animation: ff-drift 3.6s ease-in-out infinite 0.6s; }
+[data-theme="light"] .b-firefly { display: none; }
+
+@keyframes fire-flicker {
+  from { transform: scaleX(1)    scaleY(1);    opacity: 1; }
+  to   { transform: scaleX(0.78) scaleY(1.16); opacity: 0.88; }
+}
+@keyframes ff-drift {
+  0%,100% { transform: translate(0, 0);         opacity: 0.15; }
+  25%      { transform: translate(6px, -9px);    opacity: 0.90; }
+  50%      { transform: translate(-4px, -15px);  opacity: 0.18; }
+  75%      { transform: translate(9px, -7px);    opacity: 0.85; }
+}
+
+/* =============================================
    LAYOUT
    ============================================= */
 .wrap {
