@@ -852,6 +852,7 @@ main { padding-top: 80px; position: relative; z-index: 2; }
    ============================================= */
 .projects-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1.1rem; }
 .project-card  { display: flex; flex-direction: column; gap: 0.7rem; }
+.project-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; }
 .project-tag {
   align-self: flex-start;
   font-size: 0.70rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase;
