@@ -852,8 +852,9 @@ main { padding-top: 80px; position: relative; z-index: 2; }
    ============================================= */
 .projects-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1.1rem; }
 .project-card  { display: flex; flex-direction: column; gap: 0.7rem; }
-.project-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.project-tags { display: flex; flex-direction: row; gap: 0.4rem; flex-wrap: wrap; align-items: flex-start; }
 .project-tag {
+  display: inline-block;
   align-self: flex-start;
   font-size: 0.70rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase;
   padding: 3px 9px; border-radius: 50px; background: var(--tag-bg); color: var(--tag-text);
