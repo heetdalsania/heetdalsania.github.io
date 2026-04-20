@@ -29,7 +29,7 @@
   --nav-bg:       rgba(255,250,225,0.80);
   --chip-accent-bg:   #0990a8;
   --chip-accent-text: #fff;
-  --label-color:  #d63d7a;
+  --label-color:  rgba(255, 255, 255, 0.92);
 
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-head: 'Space Grotesk', system-ui, sans-serif;
@@ -478,6 +478,7 @@ main { padding-top: 80px; position: relative; z-index: 2; }
   height: 1px;
   background: var(--border);
 }
+.section-label { text-shadow: 0 1px 6px rgba(0,0,0,0.28); }
 [data-theme="dark"] .section-label { text-shadow: 0 0 8px var(--accent); }
 
 /* =============================================
