@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  @page { size: letter; margin: 0.4in 0.6in; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Latin Modern Roman', 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 9.5pt;
+    line-height: 1.17;
+    color: #111;
+    margin: 0;
+  }
+  a { color: #1a4fa0; text-decoration: none; }
+
+  .name {
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: 27pt;
+    margin: 0 0 3px 0;
+  }
+  .contact {
+    text-align: center;
+    font-size: 9.6pt;
+    margin: 0 0 4px 0;
+  }
+  .contact a { margin: 0 3px; }
+  .sep { color: #888; }
+
+  h2 {
+    font-size: 11pt;
+    font-weight: 700;
+    margin: 7px 0 3px 0;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #111;
+  }
+
+  p { margin: 0 0 5px 0; }
+  .interests { text-align: justify; }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .row .left { }
+  .row .right { white-space: nowrap; font-weight: 700; }
+  .title { font-weight: 700; }
+  .sub { font-style: italic; margin-bottom: 2px; }
+  .desc { margin: 1px 0 4px 0; }
+
+  ol.pubs { margin: 0; padding-left: 20px; }
+  ol.pubs li { margin-bottom: 5px; }
+  ol.pubs .ptitle { font-weight: 700; }
+  ol.pubs .venue { font-weight: 700; font-style: italic; white-space: nowrap; }
+
+  .entry { margin-bottom: 5px; }
+  .compact { margin: 2px 0 4px 0; }
+  .tech b, .compact b { font-weight: 700; }
+  .stack { font-style: italic; color: #333; }
+</style>
+</head>
+<body>
+
+  <div class="name">Heet Dalsania</div>
+  <div class="contact">
+    <a href="https://heetdalsania.github.io">heetdalsania.github.io</a> <span class="sep">|</span>
+    <a href="mailto:hdalsani@asu.edu">hdalsani@asu.edu</a> <span class="sep">|</span>
+    <a href="https://github.com/heetdalsania">GitHub</a> <span class="sep">|</span>
+    <a href="https://www.linkedin.com/in/heet-dalsania-b37999283/">LinkedIn</a> <span class="sep">|</span>
+    <a href="https://arxiv.org/search/eess?searchtype=author&query=Dalsania,+H+N">arXiv</a>
+  </div>
+
+  <h2>Research Interests</h2>
+  <p class="interests">
+    I am an undergraduate researcher interested in adapting large pre-trained foundation models to new
+    domains <b>cheaply, reliably, and in real time</b>. My work centers on three themes:
+    <b>label-efficient domain adaptation</b> (adapting vision-language models such as CLIP with very
+    little labeled data), <b>cost-engineered LLM systems</b>, and <b>cross-modal grounding</b> as a
+    mechanism for truth-arbitration in generative AI. Application areas span biomedical imaging,
+    computer vision, and AI-generated video detection.
+  </p>
+
+  <h2>Education</h2>
+  <div class="entry">
+    <div class="row">
+      <span class="title">Arizona State University, Tempe, AZ</span>
+      <span class="right">Aug 2025 &ndash; May 2029 (Expected)</span>
+    </div>
+    <div class="sub">B.S. Computer Science, Barrett Honors College &mdash; GPA 4.0 &middot; Dean&rsquo;s List &middot; Barrett Undergraduate Research Fellow</div>
+  </div>
+  <div class="entry">
+    <div class="row">
+      <span class="title">BASIS Peoria, Peoria, AZ</span>
+      <span class="right">Aug 2021 &ndash; May 2025</span>
+    </div>
+    <div class="sub">High School Diploma &mdash; GPA 4.65W / 3.92UW &middot; AP Scholar &middot; National Latin Exam (2&times; Gold, 1&times; Silver)</div>
+  </div>
+
+  <h2>Publications</h2>
+  <ol class="pubs">
+    <li>
+      <div class="row">
+        <span class="left"><span class="ptitle">Label-Efficient Chest X-ray Diagnosis via Partial CLIP Adaptation</span><br>
+        <b>Heet Dalsania</b></span>
+        <span class="venue">arXiv preprint&nbsp;2025</span>
+      </div>
+      <div style="font-size:9.5pt; color:#444;">
+        <a href="https://arxiv.org/abs/2507.07254">arXiv:2507.07254</a> &middot; sole author &middot; work from the ASU SCENE program (Prof. Jianming Liang).
+      </div>
+    </li>
+  </ol>
+
+  <h2>Research Experience</h2>
+  <div class="entry">
+    <div class="row">
+      <span class="title">Undergraduate Researcher &middot; People and Robots Laboratory (PeRL), ASU</span>
+      <span class="right">Jan 2026 &ndash; Present</span>
+    </div>
+    <div class="sub">Advisor: Prof. Pooyan Fazli</div>
+    <div class="desc">Developing deep-learning methods to detect AI-generated video content; focus on computer vision and deep learning.</div>
+  </div>
+  <div class="entry">
+    <div class="row">
+      <span class="title">Barrett Undergraduate Research Fellow &middot; Arizona State University</span>
+      <span class="right">May 2025 &ndash; Dec 2025</span>
+    </div>
+    <div class="sub">Advisor: Prof. Jianming Liang</div>
+    <div class="desc">Advanced deep learning for biomedical imaging and computer-aided diagnosis, pursuing state-of-the-art performance with limited labeled data.</div>
+  </div>
+  <div class="entry">
+    <div class="row">
+      <span class="title">Research Assistant &middot; ASU SCENE Program</span>
+      <span class="right">Sep 2024 &ndash; May 2025</span>
+    </div>
+    <div class="sub">Advisor: Prof. Jianming Liang</div>
+    <div class="desc">Label-efficient chest X-ray diagnosis via partial CLIP adaptation for zero-/few-shot rare-disease detection; sole-authored resulting arXiv preprint.</div>
+  </div>
+
+  <h2>Projects</h2>
+  <div class="compact"><b>Physiq</b> <span class="stack">&mdash; Python, Computer Vision, ML.</span>
+    AI fitness and body-analysis app using computer vision to assess posture and form from a live camera feed, generating personalized workout recommendations in real time.</div>
+  <div class="compact"><b>Pulse</b> <span class="stack">&mdash; JavaScript, NLP, Sentiment Analysis.</span>
+    Stock-news intelligence platform with lexicon-based sentiment analysis for user watchlists, aggregating Yahoo Finance and Google News and ranking articles by relevance and conviction.</div>
+  <div class="compact"><b>FADE</b> <span class="stack">&mdash; Python, LLM, React.</span>
+    Autonomous agent that generates weekly GitHub PR digests and analyzes its own execution trace, classifying steps as deterministic, rule-based, or AI-required to cut costs by up to 99.8%.</div>
+  <div class="compact"><b>NBA MVP Predictor</b> <span class="stack">&mdash; Python, Scikit-learn, Pandas.</span>
+    ML model trained on NBA MVP data and player stats (1995&ndash;2024) to weigh each stat&rsquo;s contribution to MVP shares, achieving 90% accuracy.</div>
+
+  <h2>Certifications</h2>
+  <p class="compact">
+    Google Cloud Professional Machine Learning Engineer &middot; AWS Certified AI Practitioner &middot;
+    Oracle Cloud Generative AI Professional &middot; Stanford / DeepLearning.AI Supervised Machine Learning &middot;
+    IBM Applied AI Professional Certificate
+  </p>
+
+  <h2>Technical Skills</h2>
+  <p class="tech compact"><b>Languages:</b> Python, JavaScript, C/C++, SQL &nbsp;&bull;&nbsp;
+    <b>Frameworks:</b> PyTorch, TensorFlow, Scikit-learn, Pandas, Flask<br>
+    <b>Areas:</b> Computer Vision, Deep Learning, NLP, CLIP, Few-Shot Learning, Generative AI &nbsp;&bull;&nbsp;
+    <b>Cloud:</b> AWS, Google Cloud, Oracle Cloud, IBM Watson</p>
+
+  <h2>Activities</h2>
+  <p class="compact">Claude Builder Club &middot; Hacker Devils Club &middot; AI Scholars Society</p>
+
+</body>
+</html>
